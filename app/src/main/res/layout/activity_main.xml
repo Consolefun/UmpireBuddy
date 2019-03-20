@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity"
+    >
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Long_click_here"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/Strikecounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:text="STRIKE: 0"
+        />
+    <TextView
+        android:id="@+id/Ballcounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textSize="30sp"
+        android:text="BALLS: 0"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_below="@id/Ballcounter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        >
+        <TextView
+            android:id="@+id/totalcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Count: 0"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/Ballplus"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/Strikeplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="count_strike"
+            android:layout_centerHorizontal="true"
+            android:text="Strike"
+            android:textSize="30sp"
+            />
+        <Button
+            android:id="@+id/Ballplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="count_ball"
+            android:layout_centerHorizontal="true"
+            android:text="Ball"
+            android:layout_marginTop="67dp"
+            android:textSize="30sp"
+            />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+

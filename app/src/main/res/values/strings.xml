@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Umpire Buddy</string>
+    <string name="about">About</string>
+    <string name="reset">Reset</string>
+    <string name="count">count</string>
+</resources>
